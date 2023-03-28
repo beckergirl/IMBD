@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- importacion boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+     <!-- importacion JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>IMBD / películas</title>
+</head>
+
+<body style="background-color:black ;">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: black;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../img/logoIMBD.png" style="height:45px"></img></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="color:white;">Inicia Sesión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="imbd.html" style="color:white;">Películas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"style="color:white;">Series</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"style="color:white;" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Mucho más
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="tuFilmoteca.html">Crea tu filmoteca</a></li>
+              <li><a class="dropdown-item" href="#">Actores</a></li>
+              <li><a class="dropdown-item" href="directoresMes.html">Directores</a></li>
+              <li><a class="dropdown-item" href="#">Cine</a></li>
+              <li><a class="dropdown-item" href="#">Cartelera</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+   <!-- PORTADA / CARRUSEL CON IMAGENES -->
+   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="background-color: black;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../img/cortoWesAnderson.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../img/HotelBudapest.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../img/lifeAcuatic.BillMurray.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<!-- FICHAS ACTORES Y PELICULAS -->
+<!-- PRIMER CONTENEDOR / PELICULAS -->
+
+  <!-- primer CONTENEDOR / peliculas -->
+<div class="container">
+    <div class="flex-column" >
+        <div class="col-sm 4">
+        <br>
+          <br>
+          <centre><p clas="presentación" style="color: rgb(255, 234, 44);text-align: center;font-size: xx-large;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Nuestros Principales para este fin de semana</p></centre>
+        <BR>
+     <div class="container-fluid d-flex mt-4 justify-content-center d-grid  gap-4" >
+  <!-- FICHA  1 THE LIFE ACUATIC-->
+  <div class="card" style="width: 22rem;">
+    <img src="../img/lifeAcuatic.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">The Life Acuatic.</h5>
+      <p class="card-text">Decisión algo controvertida, pero estamos hablando, probablemente, de su película más personal. De una que sólo Wes Anderson habría podido hacer: tan alambicada y heterodoxa que no debería funcionar a un nivel emocional, que debería haber acabado siendo una simple impostura. Y, sin embargo, Life Aquatic es pura poesía rarísima, amén de su historia de padres negligentes e hijos perdidos más fina hasta la fecha.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">2004</li>
+      <li class="list-group-item">Wes Anderson</li>
+    </ul>
+    <div class="card-body">
+      <a href="#" class="card-link" style="color: rgb(0, 0, 0);font-style: oblique;">Ver ficha completa</a>
+    </div>
+  </div>
+    <!-- FICHA  2-->
+    <div class="card" style="width: 22rem;">
+        <img src="../img/The_Tenenbaums.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">The Royal Tennembaums</h5>
+          <p class="card-text"> Muy poca gente lo sabe, pero quizá sea la película más española de Anderson. Los Tenenbaums no es la obra de un cinéfilo criado en un laboratorio, sino uno de los pedazos más radiantes y magistrales de una filmografía especializada en narrar los estados carenciales de cariño. Su familia extraordinaria y disfuncional lleva a los Glass de Salinger a un terreno inequívocamente personal, con su plano final como gran fundación oficial del Estilo Wes Anderson. Esta es la peli que viste sin saber mucho acerca de su director, pero de la que saliste siendo admirador de por vida.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">2002</li>
+          <li class="list-group-item">Wes Anderson</li>
+        </ul>
+        <div class="card-body">
+            <a href="#" class="card-link" style="color: rgb(0, 0, 0);font-style: oblique;">Ver ficha completa</a>
+        </div>
+      </div>
+        <!-- FICHA  3-->
+  <div class="card" style="width: 22rem;">
+    <img src="../img/TheDarjeelingLimited.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">The Darjeeling Limited</h5>
+      <p class="card-text">Su película más arriesgada (para bien y para mal) ya estuvo rodeada de polémica, especialmente por una secuencia que trataba el funeral de un niño indio como simple plataforma para la iluminación espiritual de sus protagonistas caucásicos. Quejarse de algo así es, no obstante, no haber entendido la radical propuesta de Darjeeling, película que adopta el repelente punto de vista de sus pijos protagonistas para explicarnos que un solipsista norteamericano jamás podrá conectar con otras realidades o culturas, sino simplemente dar vueltas concéntricas a sus propios traumas (del primer mundo).</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">2007</li>
+      <li class="list-group-item">Wes Anderson</li>
+    </ul>
+    <div class="card-body">
+        <a href="#" class="card-link" style="color: rgb(0, 0, 0);font-style: oblique;">Ver ficha completa</a>
+    </div>
+  </div>
+    <!-- FICHA  4-->
+    <div class="card" style="width: 22rem;">
+        <img src="../img/001.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Coffee and Cigarettes</h5>
+          <p class="card-text">Trata historias cortas todas ellas unidas por el café y los cigarrillos, en unas mesas que representan metáforicamente como tablas de ajedrez. Rodada en B/N como es el ajedrez, el café y los cigarillos.
+
+            Jarmusch nos muestra unas cuantas historias cortas en donde casi subliminalmente nos viene a decir que fumar mata... y tomar mucho café casi que también. Su humor es muy suyo, irónico, negro y en definitiva y con los años lo definiremos como "jarmuschiano".</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">2003</li>
+          <li class="list-group-item">Jim Jarmusch</li>
+        </ul>
+        <div class="card-body">
+            <a href="#" class="card-link" style="color: rgb(0, 0, 0);font-style: oblique;">Ver ficha completa</a>
+        </div>
+      </div>
+    </div>
+<!-- se añadan más peliculas -->
+    <!-- <div class="container" id="main" style="background-color: black;">
+        <div class="row d-flex justify-content-around d-grid gap-4 mt-5 pt-4 ">
+        </div>
+    </div> -->
+       <!--  FOOTER -->
+       <br>
+       <footer class="navbar navbar-expand-lg navbar-light" style="background-color: black;align-items: center;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../img/logoIMBD.png" style="height:45px"></img></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="directoresMes.html" style="color:white;">DIRECTORES DEL MES</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </footer>
+    <script src="../Js/imbd.js"></script>
+    </body>
+    </html>

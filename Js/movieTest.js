@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var Movie_1 = require("./Movie");
+var pelicula1 = new Movie_1.Movie("The Life Aquatic with Steve Zissou", 2004, "Estados Unidos", "comedia, aventuras");
+console.log(pelicula1);
+var pelicula2 = new Movie_1.Movie("The Royal Tenenbaums", 2001, "Estados Unidos", "comedia");
+console.log(pelicula2);
+var pelicula3 = new Movie_1.Movie("The Darjeeling Limited", 2009, "Estados Unidos", "comedia, aventuras, drama");
+console.log(pelicula3);
+var pelicula4 = new Movie_1.Movie("Coffee and Cigarettes", 2003, "United States, Japan, Italy", "drama, independiente");
+console.log(pelicula4);

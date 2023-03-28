@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- importacion boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+     <!-- importacion JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>IMBD / directores</title>
+</head>
+
+<body style="background-color:black ;">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: black;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../img/logoIMBD.png" style="height:45px"></img></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="color:white;">Inicia Sesión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="imbd.html" style="color:white;">Películas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"style="color:white;">Series</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"style="color:white;" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Mucho más
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="tuFilmoteca.html">Crea tu filmoteca</a></li>
+              <li><a class="dropdown-item" href="#">Actores</a></li>
+              <li><a class="dropdown-item" href="#">Cine</a></li>
+              <li><a class="dropdown-item" href="directoresMes.html">Directores</a></li>
+              <li><a class="dropdown-item" href="#">Cartelera</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+   <!-- PORTADA / CARRUSEL CON IMAGENES -->
+   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="background-color: black;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../img/botlerocket.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../img/tennenbaums.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../img/flores-rotas.jpg" class="d-block w-100" alt="...">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<!-- FICHAS ACTORES Y PELICULAS -->
+<!-- PRIMER CONTENEDOR / ACTORES -->
+
+  <!-- primer CONTENEDOR / peliculas -->
+<div class="container">
+    <div class="row">
+     <div class="col-sm 2">
+      <br>
+      <br>
+      <centre><p clas="presentación" style="color: rgb(255, 234, 44);text-align: center;font-size: xx-large;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Directores del mes</p></centre>
+      <BR>
+    <div class="container-fluid d-flex mt-4 justify-content-center d-grid  gap-4" >
+  <!-- FICHA  1 wes anderson-->
+  <div class="card" style="width: 40rem;">
+    <img src="../img/WesAnderson.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Wes Anderson.</h5>
+      <p class="card-text">Wesley Wales Anderson (Houston, Texas; 1 de mayo de 1969), conocido como Wes Anderson, es un director de cine, guionista, productor y actor estadounidense. Sus películas son conocidas por su excentricidad y su estilo visual y narrativo único entre los que se encuentran: The Royal Tenenbaums, Viaje a Darjeeling, Fantastic Mr. Fox, Moonrise Kingdom, El Gran Hotel Budapest, entre otras.
+      En 2014 ganó su primer Globo de Oro en la categoría de mejor película, musical o comedia por The Grand Budapest Hotel en 2014. Además ha ganado el Premio BAFTA a mejor guion original en 2015 y el Oso de Plata a mejor dirección por Isle of Dogs en 2018. Además de dirigir y escribir sus películas, Anderson es propietario de la productora American Empirical Pictures que fundó en 1998.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Director.</li>
+    </ul>
+  </div>
+    <!-- FICHA  2  jim jarmusch-->
+    <div class="card" style="width: 40rem;">
+        <img src="../img/JimJarmusch.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Jim Jarmusch</h5>
+          <p class="card-text"> 
+            James Robert Jarmusch (Akron, Ohio; 22 de enero de 1953), más conocido como Jim Jarmusch, es un director, guionista, actor, productor, montador y compositor estadounidense.2​Importante exponente del cine independiente, desde la década de 1980,3​ ha dirigido películas como Stranger Than Paradise (1984), Down by Law (1986), Mystery Train (1989), Dead Man (1995), Ghost Dog: The Way of the Samurai (1999), Coffee and Cigarettes (2003) y Flores rotas (2005).En su faceta como músico, ha compuesto música para sus películas y editado dos álbumes junto a Jozef van Wissem.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Director.</li>
+        </ul>
+      
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="navbar navbar-expand-lg navbar-light" style="background-color: black;align-items: center;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../img/logoIMBD.png" style="height:45px"></img></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="imbd.html" style="color:white;">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </footer>
+   
+    </body>
+    </html>
